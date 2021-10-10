@@ -5,8 +5,11 @@ import {jsPDF} from "jspdf";
 import {useState} from "react";
 import UploadCV from "./Components/UploadCV/UploadCV";
 import UploadImage from "./Components/UploadImage/UploadImage";
+import { useTranslation } from "react-i18next";
 
 function DownloadCV() {
+    const {t} = useTranslation();
+    
     function downloadCV() {
         const element = document.getElementById("cv");
         html2canvas(element).then((canvas) => {
@@ -20,7 +23,7 @@ function DownloadCV() {
         })
     }
 
-    return <button onClick={downloadCV} className={"btn"}>Download CV</button>
+    return <button onClick={downloadCV} className={"btn"}>{t("downloadCV")}</button>
 }
 
 function App() {

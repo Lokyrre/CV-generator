@@ -1,0 +1,13 @@
+{
+    "cv": {
+        "experiance": "Expériences",
+        "formation": "Formations"
+    },
+    "uploadCV": "Envoyer votre CV au format JSON",
+    "uploadFile": "Envoyer votre fichier",
+    "canDownload": "Vous pouvez télécharger un fichier d'exemple au format JSON en cliquant",
+    "here": "là",
+    "uploadPhoto": "Envoyer votre photo",
+    "skip": "Passer",
+    "downloadCV": "Télécharger CV"
+}

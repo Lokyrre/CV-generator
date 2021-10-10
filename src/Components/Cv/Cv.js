@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {Point} from "../Point/Point.js";
 import styles from "./cv.module.scss";
 
@@ -16,19 +17,21 @@ import styles from "./cv.module.scss";
  * @constructor
  */
 export function Cv({data}) {
+    const {t} = useTranslation();
+
     return (
         <div id="cv" className={styles.cv}>
             <div className={styles.row}>
                 <div className={styles.textContainer}>
-                    <h1>{data.name}</h1>
-                    <h2>{data.job}</h2>
+                    <h1 contenteditable="true">{data.name}</h1>
+                    <h2 contenteditable="true">{data.job}</h2>
                     <b>
-                        <p>
+                        <p contenteditable="true">
                             {data.tel && `tel : ${data.tel}`}
                             {data.tel && data.mail && " / "}
                             {data.mail && data.mail}
                         </p>
-                        <p>
+                        <p contenteditable="true">
                             {data.address && data.address}
                             {data.address && data.vehicle && " - "}
                             {data.vehicle && data.vehicle}
@@ -45,7 +48,7 @@ export function Cv({data}) {
                 {Object.entries(data.experiences).length > 0 &&
                 <>
                     <div className={styles.title}>
-                        <h3>Expériences</h3>
+                        <h3>{t('cv.experiance')}</h3>
                     </div>
                     {Object.entries(data.experiences).reverse().map((exp, i) => (<Point key={i} data={exp}/>))}
                 </>
@@ -53,7 +56,7 @@ export function Cv({data}) {
                 {Object.entries(data.degrees).length > 0 &&
                 <>
                     <div className={styles.title}>
-                        <h3>Formations</h3>
+                        <h3>{t('cv.formation')}</h3>
                     </div>
                     {Object.entries(data.degrees).reverse().map((degree, i) => (<Point key={i} data={degree}/>))}
                 </>
