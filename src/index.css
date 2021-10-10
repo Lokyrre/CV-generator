@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  color: var(--text-color);
+  font-family: 'Oswald', sans-serif;
+}
+
+.btn {
+  border: 0;
+  padding: 1em 2em;
+  border-radius: 7px;
+  background-color: #0f76bf;
+  color: white;
+  margin: 4em auto;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+}

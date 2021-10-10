@@ -1,0 +1,52 @@
+{
+    "name": "John Doe",
+    "job": "Incredible JOB",
+    "tel": "XX.XX.XX.XX.XX",
+    "mail": "myawesomeadressmail@mail.com",
+    "address": "This here I live, in earth",
+    "vehicle": "Car",
+    "degrees": {
+        "Degree 1": {
+            "year": "1998",
+            "title": "Harvard"
+        },
+        "Degree 2": {
+            "year": "1999",
+            "title": "Standford"
+        }
+    },
+    "experiences": {
+        "Society 1": {
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec auctor mi, vel accumsan diam. Sed nec sagittis augue. Proin non ligula est. Sed in magna maximus, scelerisque lorem vel, facilisis neque. Phasellus tempus sed est efficitur pharetra. Etiam semper elit quis lacus dignissim, quis lacinia diam varius. Phasellus eget.",
+            "year": "2000-2010",
+            "title": "Job done",
+            "job": [
+                "I have do this",
+                "I have do and this",
+                "I have do and that"
+            ]
+        },
+        "Society 2": {
+            "description": "Lorem ipsum dolor sit amet",
+            "year": "2010-2015",
+            "title": "Job done",
+            "job": "I have do this"
+        },
+        "Society 3": {
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "year": "2015-2020",
+            "title": "Job done",
+            "job": "I have do this"
+        },
+        "Society 4": {
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec auctor mi, vel accumsan diam. Sed nec sagittis augue. Proin non ligula est. Sed in magna maximus, scelerisque lorem vel, facilisis neque.",
+            "year": "2020-2021",
+            "title": "Job done",
+            "current": "true",
+            "job": [
+                "I have do this",
+                "I have do and this"
+            ]
+        }
+    }
+}
